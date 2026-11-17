@@ -27,6 +27,16 @@ python3 -m http.server 8080
 
 Open `http://localhost:8080/`. A server is required because asset URLs are root-relative.
 
+## Free hosting with GitHub Pages (fewest extra accounts)
+
+The site uses relative internal and asset links, so it works both at the root of a `pages.dev` domain and under the `/trove-studio/` project path on GitHub Pages.
+
+1. Open `https://github.com/janusoosthuizen2-work/trove-studio/settings/pages`.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Choose branch **main**, folder **/(root)**, then **Save**.
+4. Once deployed, GitHub typically displays an address similar to `https://janusoosthuizen2-work.github.io/trove-studio/`. Use the actual URL shown, not a guessed URL.
+5. This remains `noindex` until the business is approved for public search results. GitHub Pages does not use Cloudflare's `_headers` file, but the HTML meta robots directive still applies.
+
 ## Free hosting with Cloudflare Pages
 
 1. Sign in to Cloudflare and open **Workers & Pages > Create > Pages > Connect to Git**.

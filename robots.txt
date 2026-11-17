@@ -1,0 +1,4 @@
+# Pre-launch staging: pages use noindex in HTML and response headers.
+# Do not use robots.txt Disallow to hide noindex from search engine crawlers.
+User-agent: *
+Allow: /
